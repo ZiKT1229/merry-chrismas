@@ -1,5 +1,5 @@
 body {
-  background: #111;
+  background: rgb(29, 29, 29);
   margin: 0;
 }
 
@@ -149,4 +149,117 @@ h1 {
   100% {
     text-shadow: 0 0 32px rgba(255, 65, 185, 1);
   }
+}
+
+.snowman {
+  position: relative;
+  top: 100px;
+}
+
+.snowman-head::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  width: 100px;
+  height: 20px;
+  background: black;
+  transform: rotate(10deg);
+}
+
+.snowman-head::after {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: 37px;
+  width: 50px;
+  height: 30px;
+  background: black;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  transform: rotate(10deg);
+  border-bottom: 10px solid white;
+}
+
+.snowman-head {
+  position: relative;
+  top: 20px;
+  width: 100px;
+  height: 100px;
+  background: white;
+  margin: auto;
+  border-radius: 100%;
+  border-bottom: 5px solid palevioletred;
+}
+
+.snowman-eyes {
+  position: relative;
+  top: 20px;
+  left: 18px;
+  width: 10px;
+  height: 10px;
+  background: black;
+  display: inline-block;
+  margin: 0 10px;
+  border-radius: 50%;
+}
+
+.snowman-nose {
+  position: relative;
+  top: 20px;
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  background: chocolate;
+  border-radius: 100%;
+}
+
+.snowman-mouse {
+  position: relative;
+  top: 10px;
+  margin: auto;
+  width: 50px;
+  height: 25px;
+  background: transparent;
+  border-bottom: 5px dotted gray;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px; 
+}
+
+.snowman-body {
+  width: 200px;
+  height: 200px;
+  background: white;
+  margin: auto;
+  border-radius: 100%;
+}
+
+.snowman-left-head {
+  position: relative;
+  top: 50px;
+  left: -30px;
+  width: 70px;
+  height: 10px;
+  background: saddlebrown;
+  transform: rotate(20deg);
+}
+
+.snowman-right-head {
+  position: relative;
+  top: 40px;
+  left: 170px;
+  width: 70px;
+  height: 10px;
+  background: saddlebrown;
+  transform: rotate(-20deg);
+}
+
+.snowman-button {
+  position: relative;
+  top: 30px;
+  width: 10px;
+  height: 10px;
+  background: black;
+  border-radius: 100%;
+  margin: 20px auto;
 }
