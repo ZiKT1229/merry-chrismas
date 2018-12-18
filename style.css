@@ -50,19 +50,19 @@ body {
   animation-iteration-count: infinite;
 }
 
-.wire-1 li:nth-child(3n+1) {
+.wire-1 li:nth-child(3n+2) {
   animation-name: second-flash;
 }
 
-.wire-1 li:nth-child(3n+2) {
+.wire-1 li:nth-child(3n+3) {
   animation-name: third-flash;
 }
 
-.wire-2 li:nth-child(3n+1) {
+.wire-2 li:nth-child(3n+2) {
   animation-name: second-flash;
 }
 
-.wire-2 li:nth-child(3n+2) {
+.wire-2 li:nth-child(3n+3) {
   animation-name: third-flash;
 }
 
@@ -138,16 +138,16 @@ h1 {
 
 @keyframes text-shine {
   0% {
-    text-shadow: 0 0 32px rgba(255, 65, 185, 1);
-  }
-  33% {
-    text-shadow: 0 0 32px rgba(65, 255, 100, 1);
-  }
-  66% {
     text-shadow: 0 0 32px rgba(255, 230, 65, 1);
   }
+  33% {
+    text-shadow: 0 0 32px rgba(255, 65, 185, 1);;
+  }
+  66% {
+    text-shadow: 0 0 32px rgba(65, 255, 100, 1)
+  }
   100% {
-    text-shadow: 0 0 32px rgba(255, 65, 185, 1);
+    text-shadow: 0 0 32px rgba(255, 230, 65, 1);
   }
 }
 
