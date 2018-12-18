@@ -266,3 +266,47 @@ h1 {
   border-radius: 100%;
   margin: 20px auto;
 }
+
+.snow {
+  width: 300px;
+  position: absolute;
+  top: 0px;
+  left: 40%;
+}
+
+.snow-ball {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: white;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  border-radius: 100%;
+  margin: 0 60px;
+  animation-name: fall;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.snow-ball:nth-child(2n+2) {
+  position: relative;
+  top: 200px;
+}
+
+@keyframes fall {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(20px, 150px);
+  }
+  50% {
+    transform: translate(0, 300px);
+  }
+  75% {
+    transform: translate(-20px, 450px);
+  }
+  100% {
+    transform: translate(0, 600px);
+  }
+}
